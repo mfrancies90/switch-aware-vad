@@ -7,7 +7,6 @@ This repository contains the code for the paper *"Switch-Aware Voice Activity De
 
 Pretrained voice activity detectors (VADs) are trained mostly on uniform, often monolingual speech. They degrade on dialectal Arabic, where speakers move between Modern Standard Arabic and a regional dialect within a single utterance. This project adapts a compact pretrained MarbleNet VAD to Egyptian code-switched speech with **switch-triggered Elastic Weight Consolidation (EWC)**. The parameter-importance snapshot that protects previously learned behavior is refreshed only when code-switching is detected in the incoming training batch, rather than once at the start or on a fixed schedule.
 
-![Overall framework](figures/fig1_overall_framework.png)
 
 ---
 
@@ -34,7 +33,6 @@ Pretrained voice activity detectors (VADs) are trained mostly on uniform, often 
 
 McNemar's exact test confirms that switch-triggered EWC significantly outperforms vanilla EWC at both scales (p = 0.013 and p < 0.001).
 
-![False-active time](figures/Fig2_false_active_time.png)
 
 ---
 
